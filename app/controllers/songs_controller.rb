@@ -7,6 +7,7 @@ class SongsController < ApplicationController
   end
 
   def create
+    find_song 
   end
 
   def show
