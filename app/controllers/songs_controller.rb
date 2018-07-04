@@ -10,11 +10,11 @@ class SongsController < ApplicationController
   end
 
   def show
-    @song = Song.find(params[:id])
+    find_song 
   end
 
   def edit
-    @song = Song.find(params[:id])
+    find_song
   end
 
   def update
