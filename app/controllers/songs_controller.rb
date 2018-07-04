@@ -26,6 +26,7 @@ class SongsController < ApplicationController
   end
 
   def update
+    find_song 
     if @song.update 
       redirect_to song_path(@song)
     else 
