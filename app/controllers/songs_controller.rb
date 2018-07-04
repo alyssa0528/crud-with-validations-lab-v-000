@@ -26,6 +26,11 @@ class SongsController < ApplicationController
   end
 
   def update
+    if @song.update 
+      redirect_to song_path(@song)
+    else 
+      render :edit 
+    end 
   end
 
   def delete
