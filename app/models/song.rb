@@ -7,3 +7,4 @@ class Song < ActiveRecord::Base
   def released?
     self.released == true
   end
+end 
