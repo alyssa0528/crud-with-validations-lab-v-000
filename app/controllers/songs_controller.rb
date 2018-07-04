@@ -7,7 +7,7 @@ class SongsController < ApplicationController
   end
 
   def create
-    find_song 
+    @song = Song.new(params[:song])
   end
 
   def show
