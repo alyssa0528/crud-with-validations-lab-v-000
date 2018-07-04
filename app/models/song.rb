@@ -8,4 +8,3 @@ class Song < ActiveRecord::Base
     self.released == true
   end
 end
-end 
