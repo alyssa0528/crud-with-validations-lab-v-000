@@ -1,4 +1,11 @@
 <%= form_for :song do |f| %>
+  <% if @song.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@song.errors.count, "error") %>
+        prohibited this song from being saved:
+      </h2>
+    </div>
   <%= f.label :title %>
   <%= f.text_field :title %>
   <%= f.label :released %>
