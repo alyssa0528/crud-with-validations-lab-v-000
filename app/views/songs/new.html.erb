@@ -5,6 +5,10 @@
         <%= pluralize(@song.errors.count, "error") %>
         prohibited this song from being saved:
       </h2>
+      <ul>
+        <% @song.errors.full_messages.each do |m| %>
+          <li><%= m %></li>
+      </ul>
     </div>
   <%= f.label :title %>
   <%= f.text_field :title %>
