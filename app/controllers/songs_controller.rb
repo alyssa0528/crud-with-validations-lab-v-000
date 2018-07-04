@@ -27,6 +27,7 @@ class SongsController < ApplicationController
 
   def update
     find_song 
+    
     if @song.update 
       redirect_to song_path(@song)
     else 
@@ -34,7 +35,7 @@ class SongsController < ApplicationController
     end 
   end
 
-  def delete
+  def destroy
   end
 
   private 
