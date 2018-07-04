@@ -1,5 +1,13 @@
 <% @songs.each do |s| %>
-  <div class="person">
-    <%= s.title %>
-  </div>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Year</th>
+      <th>Genre</th>
+      <th>Artist name</th>
+    </tr>
+  </thead>
+</table>
+  <%= s.title %>
 <% end %>
